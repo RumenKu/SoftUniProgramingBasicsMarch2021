@@ -1,0 +1,14 @@
+public class RadToDegrees {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        //Прочитане на данни от конзолата
+        double radians = Double.parseDouble(scanner.nextLine());
+
+        // Пресмятане на резултата
+        double degrees = radians * 180 / Math.PI;
+
+        //Извеждане на резултата
+        System.out.printf("%.0f", degrees);
+    }
+}
