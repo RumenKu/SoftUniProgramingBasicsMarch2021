@@ -1,0 +1,18 @@
+public class VacationBookList {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        //Въвеждане на данни
+        Integer numPages = Integer.parseInt(scanner.nextLine());
+        Integer pagesPerHour = Integer.parseInt(scanner.nextLine());
+        Integer dayPerBook = Integer.parseInt(scanner.nextLine());
+
+        //Пресмятане на резултата
+        // За една книга
+        Integer timePerBook = numPages / pagesPerHour;
+
+        //Краен резултат
+        Integer result = timePerBook / dayPerBook;
+        System.out.println(result);
+    }
+}
