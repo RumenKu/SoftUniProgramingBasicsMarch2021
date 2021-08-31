@@ -1,0 +1,19 @@
+public class CharityCampaign {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int days = Integer.parseInt(scanner.nextLine());
+        int sladkar = Integer.parseInt(scanner.nextLine());
+        int cake = Integer.parseInt(scanner.nextLine());
+        int gofret = Integer.parseInt(scanner.nextLine());
+        int palachinki = Integer.parseInt(scanner.nextLine());
+
+        //Изчисления
+        double cakeSum = cake * 45;
+        double gofretSum = gofret * 5.80;
+        double palachinkiSum = palachinki * 3.2;
+        double allDaysSum = (cakeSum + gofretSum + palachinkiSum) * sladkar * days;
+        double neto = allDaysSum - allDaysSum / 8;
+        System.out.printf("%.2f", neto);
+
+    }
+}
