@@ -1,0 +1,19 @@
+public class FruitMarket {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double yagodiPrice = Double.parseDouble(scanner.nextLine());
+        double banani = Double.parseDouble(scanner.nextLine());
+        double portokali = Double.parseDouble(scanner.nextLine());
+        double malini = Double.parseDouble(scanner.nextLine());
+        double yagodi = Double.parseDouble(scanner.nextLine());
+
+        //Изчисления
+        double maliniPrice = yagodiPrice * 0.5;
+        double portokaliPrice = maliniPrice * 0.6;
+        double bananiPrice = maliniPrice * 0.2;
+        double total = (malini * maliniPrice) + (portokali * portokaliPrice) + (banani * bananiPrice) + (yagodi * yagodiPrice);
+        //Извеждане на резултат
+        System.out.printf("%.2f", total);
+
+    }
+}
