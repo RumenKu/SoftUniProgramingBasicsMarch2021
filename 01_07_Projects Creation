@@ -1,0 +1,10 @@
+public class ProdjectTime {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String name = scanner.nextLine();
+        int prodject = Integer.parseInt(scanner.nextLine());
+        //"The architect {името на архитекта} will need {необходими часове} hours to complete {брой на проектите} project/s."
+        int needTime = prodject * 3;
+        System.out.printf("The architect %s will need %d hours to complete %d project/s.", name, needTime, prodject);
+    }
+}
