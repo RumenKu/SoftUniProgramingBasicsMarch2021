@@ -1,0 +1,10 @@
+public class PetShop {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int dog = Integer.parseInt(scanner.nextLine());
+        int noDog = Integer.parseInt(scanner.nextLine());
+        double price = dog * 2.50 + noDog * 4;
+        //"{крайната сума} lv."
+        System.out.printf(" %.1f lv.", price);
+    }
+}
