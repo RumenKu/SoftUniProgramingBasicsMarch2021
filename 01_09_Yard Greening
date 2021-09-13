@@ -1,0 +1,17 @@
+public class YardGreening {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        //Входани данни
+        double meters = Double.parseDouble (scanner.nextLine());
+
+        //Изчисления
+        double allPrice = meters * 7.61;
+        double discount = allPrice * 0.18;
+        double finalPrice = allPrice - discount;
+        //"The final price is: {крайна цена на услугата} lv."
+        //"The discount is: {отстъпка} lv."
+        System.out.printf("The final price is: %.2f lv.%n", finalPrice);
+        System.out.printf("The discount is: %.2f lv.", discount);
+
+    }
+}
