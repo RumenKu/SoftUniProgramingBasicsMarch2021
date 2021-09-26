@@ -1,0 +1,16 @@
+public class Demo {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int hour = Integer.parseInt(scanner.nextLine());
+        int min = Integer.parseInt(scanner.nextLine());
+        int myTime = hour * 60 + min;
+        int newTime = myTime + 15;
+        Integer newHour = newTime / 60;
+        Integer newMin = newTime % 60;
+        if (myTime < 1425) {
+            System.out.printf("%d:%02d", newHour, newMin);
+        } else {
+            System.out.printf("0:%02d", newMin);
+        }
+    }
+}
