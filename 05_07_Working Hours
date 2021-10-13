@@ -1,0 +1,26 @@
+public class PWorkingHours {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int hours = Integer.parseInt(scanner.nextLine());
+        String dayOfWeek = scanner.nextLine();
+        String result = "closed";
+        if (hours >= 10 && hours <= 18) {
+            switch (dayOfWeek) {
+                case "Monday":
+                case "Tuesday":
+                case "Wednesday":
+                case "Thursday":
+                case "Friday":
+                case "Saturday":
+                    result = "open";
+                    System.out.println(result);
+                    break;
+                default:
+                    System.out.println(result);
+                    break;
+            }
+        } else
+            System.out.println(result);
+
+    }
+}
